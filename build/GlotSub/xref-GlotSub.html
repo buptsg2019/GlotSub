@@ -18,9 +18,7 @@
   <a target="code" href="///D:/Software/GlotSub/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
-    <a href="#PIL">PIL</a>
- &#8226;   <a href="#PIL.Image">PIL.Image</a>
- &#8226;   <a href="#PIL._tkinter_finder">PIL._tkinter_finder</a>
+    <a href="#PIL._tkinter_finder">PIL._tkinter_finder</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#abc">abc</a>
@@ -29,7 +27,6 @@ imports:
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#customtkinter">customtkinter</a>
- &#8226;   <a href="#cv2">cv2</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
  &#8226;   <a href="#encodings.ascii">encodings.ascii</a>
@@ -155,14 +152,19 @@ imports:
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#genericpath">genericpath</a>
+ &#8226;   <a href="#glotsub">glotsub</a>
+ &#8226;   <a href="#glotsub.core">glotsub.core</a>
+ &#8226;   <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#glotsub.ui">glotsub.ui</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#glotsub.utils">glotsub.utils</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
  &#8226;   <a href="#heapq">heapq</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
- &#8226;   <a href="#mss">mss</a>
  &#8226;   <a href="#ntpath">ntpath</a>
- &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#posixpath">posixpath</a>
@@ -170,8 +172,6 @@ imports:
  &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
- &#8226;   <a href="#pyperclip">pyperclip</a>
- &#8226;   <a href="#pytesseract">pytesseract</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#re._casefix">re._casefix</a>
  &#8226;   <a href="#re._compiler">re._compiler</a>
@@ -182,10 +182,7 @@ imports:
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stat">stat</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#tkinter">tkinter</a>
- &#8226;   <a href="#tkinter.filedialog">tkinter.filedialog</a>
  &#8226;   <a href="#tkinter.messagebox">tkinter.messagebox</a>
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#types">types</a>
@@ -479,7 +476,10 @@ imported by:
  &#8226;   <a href="#PIL._webp">PIL._webp</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
  &#8226;   <a href="#customtkinter.windows.widgets.image.ctk_image">customtkinter.windows.widgets.image.ctk_image</a>
- &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
  &#8226;   <a href="#pytesseract.pytesseract">pytesseract.pytesseract</a>
 
   </div>
@@ -1162,7 +1162,10 @@ imported by:
  &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
  &#8226;   <a href="#customtkinter.windows.widgets.image.ctk_image">customtkinter.windows.widgets.image.ctk_image</a>
- &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
  &#8226;   <a href="#pytesseract.pytesseract">pytesseract.pytesseract</a>
 
   </div>
@@ -3782,6 +3785,7 @@ imported by:
  &#8226;   <a href="#dataclasses">dataclasses</a>
  &#8226;   <a href="#email._policybase">email._policybase</a>
  &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
  &#8226;   <a href="#importlib._abc">importlib._abc</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
@@ -5851,6 +5855,7 @@ imported by:
     <a href="#customtkinter">customtkinter</a>
  &#8226;   <a href="#customtkinter.windows">customtkinter.windows</a>
  &#8226;   <a href="#customtkinter.windows.widgets.core_widget_classes.ctk_base_class">customtkinter.windows.widgets.core_widget_classes.ctk_base_class</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
  &#8226;   <a href="#main.py">main.py</a>
 
   </div>
@@ -6961,7 +6966,7 @@ imported by:
  &#8226;   <a href="#cv2.typing">cv2.typing</a>
  &#8226;   <a href="#cv2.utils">cv2.utils</a>
  &#8226;   <a href="#cv2.version">cv2.version</a>
- &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
 
   </div>
 
@@ -10878,6 +10883,289 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="glotsub"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/__init__.py" type="text/plain"><tt>glotsub</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imported by:
+    <a href="#glotsub.core">glotsub.core</a>
+ &#8226;   <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#glotsub.ui">glotsub.ui</a>
+ &#8226;   <a href="#glotsub.utils">glotsub.utils</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.core"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/core/__init__.py" type="text/plain"><tt>glotsub.core</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#glotsub">glotsub</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
+ &#8226;   <a href="#glotsub.core.subtitle_manager">glotsub.core.subtitle_manager</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.core.screenshot"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/core/screenshot.py" type="text/plain"><tt>glotsub.core.screenshot</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#glotsub.core">glotsub.core</a>
+ &#8226;   <a href="#mss">mss</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.core.subtitle_manager"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/core/subtitle_manager.py" type="text/plain"><tt>glotsub.core.subtitle_manager</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#glotsub.core">glotsub.core</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ocr"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ocr/__init__.py" type="text/plain"><tt>glotsub.ocr</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#glotsub">glotsub</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ocr.ocr_engine"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ocr/ocr_engine.py" type="text/plain"><tt>glotsub.ocr.ocr_engine</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ocr.ocr_factory"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ocr/ocr_factory.py" type="text/plain"><tt>glotsub.ocr.ocr_factory</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ocr.paddle_ocr"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ocr/paddle_ocr.py" type="text/plain"><tt>glotsub.ocr.paddle_ocr</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#numpy">numpy</a>
+ &#8226;   <a href="#paddleocr">paddleocr</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ocr.tesseract_ocr"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ocr/tesseract_ocr.py" type="text/plain"><tt>glotsub.ocr.tesseract_ocr</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.Image">PIL.Image</a>
+ &#8226;   <a href="#cv2">cv2</a>
+ &#8226;   <a href="#glotsub.ocr">glotsub.ocr</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
+ &#8226;   <a href="#numpy">numpy</a>
+ &#8226;   <a href="#pytesseract">pytesseract</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ui"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ui/__init__.py" type="text/plain"><tt>glotsub.ui</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#glotsub">glotsub</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#glotsub.ui.region_selector">glotsub.ui.region_selector</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ui.main_window"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ui/main_window.py" type="text/plain"><tt>glotsub.ui.main_window</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#customtkinter">customtkinter</a>
+ &#8226;   <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
+ &#8226;   <a href="#glotsub.core.subtitle_manager">glotsub.core.subtitle_manager</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+ &#8226;   <a href="#glotsub.ui">glotsub.ui</a>
+ &#8226;   <a href="#glotsub.ui.region_selector">glotsub.ui.region_selector</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
+ &#8226;   <a href="#pyperclip">pyperclip</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#tkinter">tkinter</a>
+ &#8226;   <a href="#tkinter.filedialog">tkinter.filedialog</a>
+ &#8226;   <a href="#tkinter.messagebox">tkinter.messagebox</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.ui.region_selector"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/ui/region_selector.py" type="text/plain"><tt>glotsub.ui.region_selector</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#glotsub.ui">glotsub.ui</a>
+ &#8226;   <a href="#tkinter">tkinter</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.utils"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/utils/__init__.py" type="text/plain"><tt>glotsub.utils</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#glotsub">glotsub</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.utils.config">glotsub.utils.config</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="glotsub.utils.config"></a>
+  <a target="code" href="///D:/Software/GlotSub/glotsub/utils/config.py" type="text/plain"><tt>glotsub.utils.config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#glotsub.utils">glotsub.utils</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="grp"></a>
   <a target="code" href="" type="text/plain"><tt>grp</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -11150,6 +11438,7 @@ imports:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib._bootstrap">importlib._bootstrap</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#warnings">warnings</a>
 
@@ -11286,6 +11575,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#ctypes.util">ctypes.util</a>
+ &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
@@ -12201,7 +12491,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#main.py">main.py</a>
+    <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
  &#8226;   <a href="#mss.base">mss.base</a>
  &#8226;   <a href="#mss.darwin">mss.darwin</a>
  &#8226;   <a href="#mss.exception">mss.exception</a>
@@ -13592,7 +13882,8 @@ imported by:
     <a href="#cv2">cv2</a>
  &#8226;   <a href="#cv2.mat_wrapper">cv2.mat_wrapper</a>
  &#8226;   <a href="#cv2.typing">cv2.typing</a>
- &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy.__config__">numpy.__config__</a>
  &#8226;   <a href="#numpy._array_api_info">numpy._array_api_info</a>
@@ -20219,6 +20510,7 @@ imported by:
  &#8226;   <a href="#getpass">getpass</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
@@ -20395,6 +20687,17 @@ imported by:
  &#8226;   <a href="#customtkinter.windows.ctk_toplevel">customtkinter.windows.ctk_toplevel</a>
  &#8226;   <a href="#packaging">packaging</a>
  &#8226;   <a href="#pytesseract.pytesseract">pytesseract.pytesseract</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="paddleocr"></a>
+  <a target="code" href="" type="text/plain"><tt>paddleocr</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
 
   </div>
 
@@ -20863,7 +21166,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#main.py">main.py</a>
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
 
   </div>
 
@@ -20879,7 +21182,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#main.py">main.py</a>
+    <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
  &#8226;   <a href="#pytesseract.pytesseract">pytesseract.pytesseract</a>
 
   </div>
@@ -22201,9 +22504,9 @@ imported by:
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#mss.base">mss.base</a>
  &#8226;   <a href="#mss.linux">mss.linux</a>
  &#8226;   <a href="#mss.windows">mss.windows</a>
@@ -22285,11 +22588,12 @@ imported by:
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#gc">gc</a>
+ &#8226;   <a href="#glotsub.core.subtitle_manager">glotsub.core.subtitle_manager</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
@@ -22361,6 +22665,8 @@ imported by:
  &#8226;   <a href="#customtkinter.windows.widgets.ctk_tabview">customtkinter.windows.widgets.ctk_tabview</a>
  &#8226;   <a href="#customtkinter.windows.widgets.ctk_textbox">customtkinter.windows.widgets.ctk_textbox</a>
  &#8226;   <a href="#customtkinter.windows.widgets.scaling.scaling_tracker">customtkinter.windows.widgets.scaling.scaling_tracker</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#glotsub.ui.region_selector">glotsub.ui.region_selector</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#tkinter.commondialog">tkinter.commondialog</a>
  &#8226;   <a href="#tkinter.constants">tkinter.constants</a>
@@ -22444,7 +22750,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#customtkinter">customtkinter</a>
- &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
 
   </div>
 
@@ -22478,7 +22784,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#main.py">main.py</a>
+    <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#tkinter">tkinter</a>
  &#8226;   <a href="#tkinter.simpledialog">tkinter.simpledialog</a>
 
@@ -22831,6 +23138,15 @@ imported by:
  &#8226;   <a href="#darkdetect._dummy">darkdetect._dummy</a>
  &#8226;   <a href="#darkdetect._mac_detect">darkdetect._mac_detect</a>
  &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#glotsub.core.screenshot">glotsub.core.screenshot</a>
+ &#8226;   <a href="#glotsub.core.subtitle_manager">glotsub.core.subtitle_manager</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_engine">glotsub.ocr.ocr_engine</a>
+ &#8226;   <a href="#glotsub.ocr.ocr_factory">glotsub.ocr.ocr_factory</a>
+ &#8226;   <a href="#glotsub.ocr.paddle_ocr">glotsub.ocr.paddle_ocr</a>
+ &#8226;   <a href="#glotsub.ocr.tesseract_ocr">glotsub.ocr.tesseract_ocr</a>
+ &#8226;   <a href="#glotsub.ui.main_window">glotsub.ui.main_window</a>
+ &#8226;   <a href="#glotsub.ui.region_selector">glotsub.ui.region_selector</a>
+ &#8226;   <a href="#glotsub.utils.config">glotsub.utils.config</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.metadata._meta">importlib.metadata._meta</a>
  &#8226;   <a href="#importlib.resources._common">importlib.resources._common</a>
