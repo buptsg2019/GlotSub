@@ -1,0 +1,25 @@
+# GlotSub 字幕识别工具依赖包
+# Python 版本要求: >= 3.7
+
+# OCR识别引擎
+pytesseract>=0.3.10
+
+# 图像处理
+Pillow>=9.0.0
+opencv-python>=4.5.0
+numpy>=1.21.0
+
+# 屏幕截图
+mss>=6.1.0
+
+# 剪贴板操作
+pyperclip>=1.8.2
+
+# 现代化GUI框架
+customtkinter>=5.2.0
+
+# OCR引擎（可选，推荐用于更好的中文识别）
+# PaddleOCR - 更好的中文识别支持（可选）
+# paddlepaddle>=2.5.0
+# paddleocr>=2.7.0
+

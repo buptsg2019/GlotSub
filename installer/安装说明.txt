@@ -1,0 +1,49 @@
+GlotSub 字幕识别工具 - 安装说明
+=====================================
+
+欢迎使用 GlotSub！
+
+【重要提示】
+本程序需要先安装 Tesseract OCR 才能正常运行。
+
+【安装步骤】
+
+1. 安装 Tesseract OCR（如果尚未安装）
+   - 下载地址：https://github.com/UB-Mannheim/tesseract/wiki
+   - 推荐版本：tesseract-ocr-w64-setup-5.x.x.exe
+   - 安装时务必勾选：
+     * Chinese Simplified (chi_sim) - 简体中文
+     * English (eng) - 英文
+   - 安装路径建议：C:\Program Files\Tesseract-OCR
+   - 安装完成后，将安装目录添加到系统 PATH 环境变量
+
+2. 运行 GlotSub.exe
+   - 双击 GlotSub.exe 启动程序
+   - 如果提示找不到 Tesseract，请检查 PATH 环境变量
+
+【使用方法】
+
+1. 点击"选择识别区域"按钮
+2. 在屏幕上拖动鼠标选择字幕显示区域
+3. 点击"开始识别"开始实时识别
+4. 识别到的字幕会自动添加到列表中
+5. 可以随时暂停/继续识别
+6. 点击"复制全部"或"导出文件"保存字幕
+
+【常见问题】
+
+Q: 提示找不到 Tesseract OCR？
+A: 请确保已安装 Tesseract OCR 并添加到系统 PATH。
+
+Q: 识别准确率低？
+A: 尝试选择更清晰的区域，确保字幕与背景对比度高。
+
+Q: 程序无法启动？
+A: 检查是否被杀毒软件拦截，添加信任即可。
+
+【技术支持】
+
+如有问题，请查看 README.md 和 INSTALL.md 文件。
+
+祝使用愉快！
+
