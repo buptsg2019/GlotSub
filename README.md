@@ -10,7 +10,9 @@ GlotSub 是一个轻量化、易打包安装的屏幕字幕识别工具，可以
 - 📝 **滚动列表**：识别到的字幕实时添加到滚动列表中显示
 - 📋 **一键复制**：将所有识别的字幕复制到剪贴板
 - 💾 **导出功能**：支持导出为文本文件（.txt）或字幕文件（.srt）
-- 💻 **轻量高效**：使用Python + Tkinter构建，内存占用小，运行流畅
+- 💻 **轻量高效**：使用Python + CustomTkinter构建，内存占用小，运行流畅
+- 🎨 **现代化界面**：深色主题，圆角设计，美观易用
+- 🧪 **完整测试**：包含单元测试，确保功能稳定
 
 ## 系统要求
 
@@ -70,6 +72,16 @@ pip install -r requirements.txt
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
+#### 可选：安装 PaddleOCR（更好的中文识别）
+
+如果需要更好的中文识别效果，可以安装 PaddleOCR：
+
+```bash
+pip install paddlepaddle paddleocr
+```
+
+安装后，程序会自动检测并使用 PaddleOCR（如果可用）。
+
 ## 使用方法
 
 1. **启动程序**
@@ -118,11 +130,46 @@ pyinstaller --onefile --windowed --name GlotSub --icon=NONE main.py
 
 ## 技术栈
 
-- **GUI框架**：Tkinter（Python 内置，轻量级）
-- **OCR引擎**：Tesseract OCR（开源，支持多语言）
+- **GUI框架**：CustomTkinter（现代化UI，支持深色主题）
+- **OCR引擎**：
+  - Tesseract OCR（默认，快速启动）
+  - PaddleOCR（可选，更好的中文识别支持）
 - **图像处理**：Pillow, OpenCV, NumPy
 - **屏幕截图**：mss（高效跨平台截图库）
 - **剪贴板操作**：pyperclip
+
+## 项目架构
+
+项目采用模块化设计，高内聚低耦合：
+
+```
+glotsub/
+├── ui/              # UI模块
+│   ├── main_window.py      # 主窗口
+│   └── region_selector.py  # 区域选择器
+├── ocr/             # OCR模块
+│   ├── ocr_engine.py       # OCR引擎接口
+│   ├── tesseract_ocr.py    # Tesseract实现
+│   ├── paddle_ocr.py       # PaddleOCR实现
+│   └── ocr_factory.py      # OCR工厂
+├── core/             # 核心功能
+│   ├── screenshot.py       # 截图功能
+│   └── subtitle_manager.py # 字幕管理
+└── utils/            # 工具模块
+    └── config.py           # 配置管理
+```
+
+## 运行测试
+
+项目包含完整的单元测试：
+
+```bash
+python run_tests.py
+```
+
+测试覆盖：
+- 区域选择器功能测试
+- 字幕管理器测试
 
 ## 注意事项
 
